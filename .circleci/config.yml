@@ -1,14 +1,12 @@
 version: '2.1'
 orbs:
-  ostorlab-circleci: ostorlab-circleci/ostorlab@1.2.0
+  ostorlab: ostorlab-circleci/ostorlab@1.2.1
 workflows:
   use-my-orb:
     jobs:
-      - ostorlab-circleci/ostorlab:
-          ostorlab_api_key: sxiR0riA.nhtQh0brThSNWdT3I2OzB9CUlZYXSCvl
+      - ostorlab/ostorlab:
+          ostorlab_api_key: 9Z4NI5bu.GgRi8YqhYSu4AZualZ0uA6wqGsEpXdZo
           asset_type: android-apk
-          break_on_risk_rating: HIGH
-          max_wait_minutes: 5
           scan_profile: fast_scan
-          scan_title: "Welcome back from circle ci again"
+          scan_title: "Circleci: Scan without waiting for results"
           target: oxo_insecure.apk
