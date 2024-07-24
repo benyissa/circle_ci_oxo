@@ -1,6 +1,6 @@
 version: '2.1'
 orbs:
-  ostorlab-circleci: ostorlab-circleci/ostorlab@1.2.0
+  ostorlab-circleci: ostorlab-circleci/ostorlab@1.2.1
 workflows:
   use-my-orb:
     jobs:
