@@ -8,7 +8,9 @@ workflows:
           ostorlab_api_key: sxiR0riA.nhtQh0brThSNWdT3I2OzB9CUlZYXSCvl
           asset_type: android-apk
           break_on_risk_rating: HIGH
-          max_wait_minutes: 5
+          max_wait_minutes: 180
           scan_profile: fast_scan
-          scan_title: "Welcome back from circle ci again"
+          scan_title: "CircleCI: please fail the build if a high-severity finding is detected! I can wait for 3h"
           target: oxo_insecure.apk
+          extra: "--test-credentials-login=test_login --test-credentials-password=test_pass"
+          
