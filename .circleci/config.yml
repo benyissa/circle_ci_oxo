@@ -5,7 +5,7 @@ workflows:
   use-my-orb:
     jobs:
       - ostorlab-circleci/ostorlab:
-          ostorlab_api_key: 9Z4NI5bu.GgRi8YqhYSu4AZualZ0uA6wqGsEpXdZo
+          ostorlab_api_key: EvQh2Hvz.F0BrMw2dVXkDtt6UoCFsDdYQEyIHdZyW
           asset_type: android-apk
           break_on_risk_rating: HIGH
           max_wait_minutes: 180
