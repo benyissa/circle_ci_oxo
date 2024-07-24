@@ -1,10 +1,10 @@
 version: '2.1'
 orbs:
-  ostorlab-circleci: ostorlab-circleci/ostorlab@1.2.0
+  ostorlab: ostorlab-circleci/ostorlab@1.2.1
 workflows:
   use-my-orb:
     jobs:
-      - ostorlab-circleci/ostorlab:
+      - ostorlab/ostorlab:
           ostorlab_api_key: 9Z4NI5bu.GgRi8YqhYSu4AZualZ0uA6wqGsEpXdZo
           asset_type: android-apk
           scan_profile: fast_scan
