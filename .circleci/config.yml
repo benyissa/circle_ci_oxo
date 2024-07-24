@@ -1,0 +1,14 @@
+version: '2.1'
+orbs:
+  ostorlab-circleci: ostorlab-circleci/ostorlab@1.2.0
+workflows:
+  use-my-orb:
+    jobs:
+      - ostorlab-circleci/ostorlab:
+          ostorlab_api_key: sxiR0riA.nhtQh0brThSNWdT3I2OzB9CUlZYXSCvl
+          asset_type: android-apk
+          break_on_risk_rating: HIGH
+          max_wait_minutes: 5
+          scan_profile: fast_scan
+          scan_title: "Welcome back from circle ci again"
+          target: oxo_insecure.apk
